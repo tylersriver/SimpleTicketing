@@ -10,6 +10,7 @@ class SimpleTable
     private $columns;                   // Column names
     private $tableClasses;              // Sets the bootstrap table type
     private $theadColor;                // Sets thead light or dark
+    private $hasIndex = true;           // Whether or not the table has an index column
 
 
     function __construct($tableId)
@@ -67,7 +68,7 @@ class SimpleTable
             return "";
         }
 
-        $str = "<th scope='col'>#</th> \n";
+        $str = ($this->hasIndex) ? "<th scope='col'>#</th> \n" : '';
         foreach($this->columns as $column) {
             $str .= "<th scope='col'>".$column."</th> \n";
         }
@@ -86,7 +87,7 @@ class SimpleTable
         $str = '';
         foreach($this->data as $i=>$row) {
             $str .= "<tr>                              \n";
-            $str .= "    <th scope='row'>".($i+1)."</th>   \n";
+            $str .= ($this->hasIndex) ? "    <th scope='row'>".($i+1)."</th>   \n" : '';
             foreach($row as $val) {
                 $str .= "<td>".$val."</td>             \n";
             }
@@ -152,6 +153,14 @@ class SimpleTable
         foreach($data[0] as $key=>$val){
             $this->columns[] = $key;
         }
+    }
+
+    /**
+     * @param bool $hasIndex
+     */
+    function setHasIndex($hasIndex)
+    {
+        $this->hasIndex = $hasIndex;
     }
 }
 

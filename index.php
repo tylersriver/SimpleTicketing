@@ -5,8 +5,11 @@ session_start();
 // ---------------------------------------------------------------------
 require_once "php/models/SimpleSQL.php";
 require_once "php/models/SimpleORM.php";
-
 require_once "php/models/User.php"; 
+require_once "php/models/Tickets.php"; 
+
+require_once "php/viewmodels/tickets.viewmodel.php"; 
+
 require_once "php/lib/SimpleTable.php"; 
 
 // Handle Routing

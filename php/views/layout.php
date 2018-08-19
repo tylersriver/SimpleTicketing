@@ -37,7 +37,7 @@
     <?php require_once('php/routes.php'); ?>
 
     <footer>
-        <div class="footer"> Copyright Tyler Sriver | 2018 | <a href='https://github.com/tylersriver/WeeklyBudget'>GitHub Repo</a></div>
+        <div class="footer"> Copyright Tyler Sriver | 2018 | <a href='https://github.com/tylersriver/SimpleTicketing'>GitHub Repo</a></div>
     </footer>
 
     <!-- Javascript Includes

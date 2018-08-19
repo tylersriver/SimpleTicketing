@@ -7,6 +7,8 @@ class PagesController
      */
     public function overview() 
     {
+        $transactionsTable = TicketsViewModel::ticketsTable();
+
         // Show view
         require_once('php/views/pages/overview.php');
     }
