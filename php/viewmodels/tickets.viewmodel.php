@@ -9,7 +9,8 @@ class TicketsViewModel
         $table = new SimpleTable('tickets');
         $table->setTableClasses([
             BootStrapTableClasses::Hover,
-            BootStrapTableClasses::Small
+            BootStrapTableClasses::Small,
+            BootStrapTableClasses::Striped
         ]);
         $table->setHasIndex(false);
         $table->setData($tickets);
