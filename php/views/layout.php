@@ -35,8 +35,13 @@
                     </div>
                 </li>
             </ul>
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" data-toggle="modal" data-target=".bd-example-modal-lg">New Ticket</button>
         </div>
     </nav>
+
+    <!-- Add Ticket Modal
+    ========================================================================================================================================================================== -->
+    <?php require_once('php/views/sections/newTicketModal.section.php'); ?>
 
     <!-- Route the action
     ========================================================================================================================================================================== -->

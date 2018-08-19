@@ -17,6 +17,9 @@ function call($controller, $action)
       case 'user':
         $controller = new UserController();
         break;
+      case 'tickets':
+        $controller = new TicketsController();
+        break;
     }
 
     $controller->{ $action }();
@@ -32,6 +35,9 @@ function call($controller, $action)
     'user' => [
       'login',
       'logout'
+    ],
+    'tickets' => [
+      'insert'
     ]
   );
 
