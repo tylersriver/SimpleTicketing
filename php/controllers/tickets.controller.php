@@ -11,6 +11,7 @@ class TicketsController
             'createdBy' => $_POST['createdBy'],
             'requester' => $_POST['requester'],
             'requesterPhone' => $_POST['phone'],
+            'requesterEmail' => $_POST['email'],
             'isCustomer' => isset($_POST['isCustomer']) ? $_POST['isCustomer'] : 0,
             'isResolved' => isset($_POST['isResolved']) ? $_POST['isResolved'] : 0
         ]);

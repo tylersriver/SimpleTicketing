@@ -15,6 +15,7 @@ class Tickets extends SimpleORM
                 createdDate as `Date Created`, 
                 requester as Requester, 
                 requesterPhone as Phone, 
+                requesterEmail as Email,
                 if(isCustomer=1, 'true', 'false') as `Customer?`, 
                 if(isResolved=1, 'true', 'false') as `Resolved?`,
                 resolvedDate as `Date Resolved`

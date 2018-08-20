@@ -29,6 +29,10 @@
                         <label for="phone" class="col-form-label">Phone:</label>
                         <input type="phone" class="form-control" id="phone" name="phone"/>
                     </div>
+                    <div class="form-group">
+                        <label for="email" class="col-form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" name="email"/>
+                    </div>
                     <div class="form-check form-check-inline">    
                         <label class="form-check-label" for="isCustomer">Customer? &nbsp;</label>
                         <input class="form-check-input" type="checkbox" id="isCustomer" name="isCustomer" value="1">

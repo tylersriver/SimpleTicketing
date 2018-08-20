@@ -10,6 +10,7 @@ create table tickets (
     createdDate datetime default now(),
     requester varchar(512),
     requesterPhone varchar(25),
+    requesterEmail varchar(512),
     isCustomer tinyint(1),
     isResolved tinyint(1),
     resolvedDate datetime
