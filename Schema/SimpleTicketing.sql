@@ -6,7 +6,7 @@ create table tickets (
     ticketId int(11) AUTO_INCREMENT primary key,
     title varchar(512),
     description text,
-    createdBy varchar(512),
+    createdBy int(11),
     createdDate datetime default now(),
     requester varchar(512),
     requesterPhone varchar(25),
@@ -20,7 +20,10 @@ drop table if exists user;
 create table user (
     userId int(11) AUTO_INCREMENT primary key,
     username varchar(256),
+    firstName varchar(512),
+    lastName varchar(512),
+    email varchar(512),
     password varchar(512)
 );
-insert into user (username, password) VALUES ('admin', '$2y$10$2e4PA8LteeZU0/tLdqQ/H.U.ltTa18TWpa4FTbM8YflWDZjvXpw.m');
+insert into user (username, firstName, lastName, email, password) VALUES ('admin', 'Tyler', 'Sriver', 'tylersriver@gmail.com', '$2y$10$2e4PA8LteeZU0/tLdqQ/H.U.ltTa18TWpa4FTbM8YflWDZjvXpw.m');
 

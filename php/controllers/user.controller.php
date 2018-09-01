@@ -20,7 +20,7 @@ class UserController
         }
 
         // Set session
-        $_SESSION['login_user'] = $username;
+        $_SESSION['user'] = $userInfo;
         call('pages', 'overview');
     }
 

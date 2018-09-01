@@ -18,10 +18,6 @@
                         <textarea class="form-control" name="description" id="description"></textarea>
                     </div>
                     <div class="form-group">
-                        <label for="createdBy" class="col-form-label">Created By:</label>
-                        <input type="text" class="form-control" id="createdBy" name="createdBy"/>
-                    </div>
-                    <div class="form-group">
                         <label for="requester" class="col-form-label">Requester:</label>
                         <input type="text" class="form-control" id="requester" name="requester"/>
                     </div>

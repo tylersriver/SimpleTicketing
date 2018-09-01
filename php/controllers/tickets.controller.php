@@ -8,7 +8,7 @@ class TicketsController
         Tickets::Add([
             'title' => $_POST['title'],
             'description' => $_POST['description'],
-            'createdBy' => $_POST['createdBy'],
+            'createdBy' => $_SESSION['user']['userId'],
             'requester' => $_POST['requester'],
             'requesterPhone' => $_POST['phone'],
             'requesterEmail' => $_POST['email'],

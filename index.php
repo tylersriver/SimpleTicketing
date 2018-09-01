@@ -24,7 +24,7 @@ if(isset($_GET['controller']) && isset($_GET['action']) ) {
 
 // Handle Login
 // ---------------------------------------------------------------------
-if(!isset($_SESSION['login_user']) and $controller != 'user' and $action != 'login') {
+if(!isset($_SESSION['user']) and $controller != 'user' and $action != 'login') {
     $controller = 'pages';
     $action = 'login';
     $_GET['error'] = '';
