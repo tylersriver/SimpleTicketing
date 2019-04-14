@@ -16,8 +16,8 @@ class Tickets extends SimpleORM
                 requester as Requester, 
                 requesterPhone as Phone, 
                 requesterEmail as Email,
-                if(isCustomer=1, 'True', 'False') as `Customer?`, 
-                if(isResolved=1, 'True', 'False') as `Resolved?`,
+                if(isCustomer=1, 'Yes', 'No') as `Customer?`, 
+                if(isResolved=1, 'Yes', 'No') as `Resolved?`,
                 resolvedDate as `Date Resolved`
             from tickets t
                 inner join user u

@@ -41,7 +41,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" onClick="$('#newTicket').submit()">Report Ticket</button>
+                <button type="submit" class="btn btn-primary" onClick="$('#newTicket').submit()">Submit</button>
             </div>
         </div>
     </div>
